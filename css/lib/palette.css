@@ -1,0 +1,85 @@
+.box {
+  width: 100px;
+  height: 100px;
+  float: left;
+
+}
+
+
+
+.palette_1 {
+  background-color: white;
+  height: 120px;
+  padding: 5px;
+
+}
+.palette_1 .colour_1{
+  background-color: #0d3b66;
+  color: white;
+}
+
+.palette_1 .colour_2{
+  background-color: #faf0ca;
+}
+
+.palette_1 .colour_3{
+  background-color: #f4d35e;
+}
+.palette_1 .colour_4{
+  background-color: #ee964b;
+}
+.palette_1 .colour_5{
+  background-color: #f95738;
+
+}
+
+.palette_2 {
+  background-color: white;
+  height: 150px;
+  padding: 10px;
+  color: white;
+
+}
+.palette_2 .colour_1{
+  background-color: #0d3b66;
+}
+
+.palette_2 .colour_2{
+  background-color: #faf0ca;
+  color: black;
+}
+
+.palette_2 .colour_3{
+  background-color: #0d0630;
+}
+.palette_2 .colour_4{
+  background-color: #000000;
+}
+.palette_2 .colour_5{
+  background-color: #5d4e60;
+
+}
+.palette_3 {
+  background-color: white;
+  height: 150px;
+  padding: 10px;
+}
+.palette_3 .colour_1{
+  background-color: #5dfdcb;
+}
+
+.palette_3 .colour_2{
+  background-color: #7cc6fe;
+}
+
+.palette_3 .colour_3{
+  background-color: #f4faff;
+}
+.palette_3 .colour_4{
+  background-color: #8789c0;
+}
+.palette_3 .colour_5{
+  background-color: #08090a;
+  color: white;
+
+}
