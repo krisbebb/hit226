@@ -1,4 +1,12 @@
 body {
-  background-color: #2196F3;
+  background-color: #0d3b66;
+  /* background-color: #F2E394;  yellow */
   color: white;
+  /* font-family: 'Sofia';font-size: 18px; */
+  /* font-family: 'Griffy', cursive; */
+
+}
+footer {
+  clear: both;
+  float: right;
 }
