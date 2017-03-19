@@ -2,11 +2,9 @@ nav {
   padding-top: 14px;
   padding-bottom: 14px;
   max-width: 900px;
-
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  /* clear floats */
 }
 
 .nav__list {
@@ -14,18 +12,16 @@ nav {
 float: right;
   margin-top: 31px;
   margin-bottom: 31px;
-  /*remove default ul styles*/
   list-style-type: none;
   padding-left: 0;
 }
 
 .nav__item {
   float: left;
-  
 }
+
 @media only screen and (max-device-width: 480px) {
 		nav {
     font-size: 0.8em;
     }
-
-	}
+}

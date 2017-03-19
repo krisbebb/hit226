@@ -2,8 +2,6 @@
     font-family: 'open-dyslexic';
     src: url('../../fonts/OpenDyslexic3-Regular.ttf');
 }
-
-
 p.font_griffy {
   /*  */
   font-family: 'Griffy', cursive;
@@ -17,5 +15,4 @@ p.font_sofia {
 
 p.font_open-dys {
   font-family: 'open-dyslexic';
-
 }

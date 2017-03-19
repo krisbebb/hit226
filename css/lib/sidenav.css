@@ -1,21 +1,18 @@
 .sidenav {
   /* The side navigation menu */
-
-      height: 65%;
-      width: 25%; /* 0 width - change this with JavaScript */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Stay on top */
-      margin: 0 auto;
-      left: 0;
-
-      background-color: #111; /* Black*/
-      overflow-x: hidden; /* Disable horizontal scroll */
-
-      transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+   height: 65%;
+   width: 25%;
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Stay on top */
+   margin: 0 auto;
+   left: 0;
+   background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
+
   .sidenav a.nav__link {
     min-width: 110px;
-
   }
 
 .sidenav .nav__list {
@@ -31,5 +28,4 @@
 		.sidenav {
     display: none;
     }
-
-	}
+}
