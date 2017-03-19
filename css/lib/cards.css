@@ -24,7 +24,7 @@
 }
 /* https://www.w3schools.com/howto/howto_css_cards.asp */
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 730px) {
   .card {
     display: none;
   }

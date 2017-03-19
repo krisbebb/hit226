@@ -1,10 +1,10 @@
 a:link, a:visited {
-    color: #F2AE72;
+    color: #0d3b66;
 
 }
 
 a:hover, a:active {
-    background-color: #8C4646;
+    background-color: #7cc6fe;
 }
 
 /* navigation links
@@ -15,16 +15,12 @@ a.nav__link {
   display: block;
   background-color: #ee964b;
   text-decoration: none;
-  color: white;
+  color: #000000;
   padding: 10px 24px;
   transition: background-color 100ms;
 }
 
-a.nav__link:hover,
-a.nav__link:focus {
-  background-color: #f95738;
-}
 
-a.nav__link:active {
+a.nav__link:hover {
   background-color: #FF5722;
 }
