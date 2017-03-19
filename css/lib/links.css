@@ -1,14 +1,10 @@
 a:link, a:visited {
     color: #0d3b66;
-
 }
 
 a:hover, a:active {
     background-color: #7cc6fe;
 }
-
-/* navigation links
-fix colours, sizing, positioning etc */
 
 a.nav__link {
   /* Style as buttons */
@@ -19,7 +15,6 @@ a.nav__link {
   padding: 10px 24px;
   transition: background-color 100ms;
 }
-
 
 a.nav__link:hover {
   background-color: #FF5722;
