@@ -21,6 +21,7 @@ float: right;
 
 .nav__item {
   float: left;
+  
 }
 @media only screen and (max-device-width: 480px) {
 		nav {
