@@ -9,3 +9,8 @@
   min-width: 390px;
   float: right;
 }
+@media only screen and (max-device-width: 480px) {
+		.copy {
+    float: none;
+    min-width: 90%;
+    }
