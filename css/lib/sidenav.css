@@ -21,3 +21,15 @@
 .sidenav .nav__list {
   margin: 31px;
 }
+
+.sidenav #open_d, #google_f{
+  max-width: 100%;
+  margin-top: 60px;
+}
+
+@media only screen and (max-device-width: 480px) {
+		.sidenav {
+    display: none;
+    }
+
+	}

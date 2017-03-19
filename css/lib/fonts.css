@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'open-dyslexic';
+    src: url('../../fonts/OpenDyslexic3-Regular.ttf');
+}
+
+
+p.font_griffy {
+  /*  */
+  font-family: 'Griffy', cursive;
+  font-size: 1.2em;
+}
+
+p.font_sofia {
+  font-family: 'Sofia';
+  font-size: 18px;
+}
+
+p.font_open-dys {
+  font-family: 'open-dyslexic';
+
+}
