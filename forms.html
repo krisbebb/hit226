@@ -9,7 +9,12 @@
   <meta name="author" content="Kris Bebbington">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
+  <!-- jQuery -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
+
+  <!-- Icon Library -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
 
@@ -19,71 +24,42 @@
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+
+            <li class="nav__item"><a href="about.html" class="nav__link">About</a>
+              <ul id="cssmenu" class="nav__sublist">
+                <li><a href="about.html#what" class="nav__link">Definition</a></li>
+                <li><a href="about.html#why" class="nav__link">Uses</a></li>
+                <li><a href="about.html#tips" class="nav__link">Tips</a><li>
+                <li><a href="about.html#sites" class="nav__link">Websites</a><li>
+                <li><a href="about.html#references" class="nav__link">References</a></li>
+              </ul>
+            </li>
+
             <li class="nav__item"><a href="colours.html" class="nav__link">Colours</a></li>
             <li class="nav__item"><a href="typography.html" class="nav__link">Typography</a></li>
             <li class="nav__item"><a href="forms.html" class="nav__link">Forms</a></li>
             <li class="nav__item"><a href="tables.html" class="nav__link">Tables</a></li>
         </ul>
     </nav>
+
     <div class="copy">
     <header><h1> Forms</h1>
 
   </header>
 
 
-      <form>
-        <fieldset>
-        <legend>Text Fields and Areas</legend>
-        <p><label for="text_field">Enter Name:</label><br />
-        <input type="text" id="text_field" /></p>
-        <p><label for="text_area">Enter Address:</label><br />
-        <textarea id="text_area"></textarea></p>
-        </fieldset>
-
-        <fieldset>
-        <legend>Option Groups</legend>
-        <p><label for="select_element">Select Player:</label><br />
-        <select name="select_element">
-            <optgroup label="Team 1">
-                <option value="1">Player 1</option>
-                <option value="2">Player 2</option>
-                <option value="3">Player 3</option>
-            </optgroup>
-            <optgroup label="Team 2">
-                <option value="1">Player 1</option>
-                <option value="2">Player 2</option>
-                <option value="3">Player 3</option>
-            </optgroup>
-        </select></p>
-        </fieldset>
-
-        <fieldset>
-        <legend>Radio Buttons</legend>
-        <p><label for="radio_buttons">Rating:</label><br />
-            <input type="radio" class="radio" name="radio_button" value="radio_1" /> Poor<br/>
-            <input type="radio" class="radio" name="radio_button" value="radio_2" /> Average<br/>
-            <input type="radio" class="radio" name="radio_button" value="radio_3" /> Good<br/>
-        </p>
-          </fieldset>
-
-        <fieldset>
-        <legend>Checkboxes</legend>
-        <p><label for="checkboxes">Extras:</label><br />
-            <input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> Ham<br/>
-            <input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> Cheese<br/>
-            <input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> Pineapple<br/>
-        </p>
-        </fieldset>
-
-        <fieldset>
+      <form class="container">
+<div class="row">
+        <fieldset class="columns six">
         <legend>Passwords</legend>
         <p><label for="password">Enter Password:</label><br />
             <input type="password" class="password" name="password" />
         </p>
         </fieldset>
+      </div>
 
-        <fieldset>
+      <div class="row">
+        <fieldset class="columns six">
         <legend>File Input</legend>
         <p><label for="file">Browse for File:</label><br />
             <input type="file" class="file" name="file" />
@@ -91,8 +67,75 @@
         <p><input class="button" type="reset" value="Clear" /> <input class="button" type="submit" value="Submit" />
         </p>
         </fieldset>
-      </form>
 
+</div>
+
+<div class="row">
+        <fieldset class="columns six">
+        <legend>Pizza Menu</legend>
+        <p><label for="pizza_type">Select Pizza:</label><br />
+        <select id="pizza_type">
+            <optgroup label="Traditional">
+                <option value="Supreme">Supreme</option>
+                <option value="Meatlovers">Meatlovers</option>
+                <option value="Vegetarian">Vegetarian</option>
+            </optgroup>
+            <optgroup label="Specials">
+                <option value="Chef&apos;s Special">Chef&apos;s Special</option>
+                <option value="Weekly Special">Weekly Special</option>
+                <option value="Seafood">Seafood</option>
+            </optgroup>
+        </select></p>
+        </fieldset>
+      </div>
+
+      <div class="row">
+        <fieldset class="columns six">
+        <legend>Crust Type:</legend>
+
+            <input type="radio" id="pan_crust" name="crust" checked="checked" value="Pan Crust" />
+            <label for="pan_crust">Pan</<label><br>
+            <input type="radio" id="thin_crust" name="crust" value="Thin Crust" />
+            <label for="thin_crust">Thin</label><br>
+            <input type="radio" id="cheese_crust" name="crust" value="Cheese Crust" />
+            <label for="cheese_crust">Cheese</label><br>
+
+          </fieldset>
+        </div>
+
+        <div class="row">
+        <fieldset class="columns six">
+        <legend>Extra Toppings</legend>
+
+            <input type="checkbox" id="ham" name="extras" value="Bacon" />
+            <label for="bacon">Bacon</label><br>
+            <input type="checkbox" id="mushroom" name="extras" value="Mushroom" />
+            <label for="mushroom">Mushroom</label><br>
+            <input type="checkbox" id="pineapple" name="extras" value="Pineapple" />
+            <label for="pineapple">Pineapple</label><br>
+
+        </fieldset>
+      </div>
+
+      <div class="row">
+
+                <fieldset class="columns six">
+                <legend>Customer Details</legend>
+                <p><label for="customer">Enter Name:</label><br />
+                <input type="text" id="customer" /></p>
+                <p><label for="address">Enter Address:</label><br />
+                <textarea id="address"></textarea></p>
+                <input type="button" id="write" value="Enter">
+                <input type="button" id="read" value="Retrieve">
+                <input type="button" id="reset" value="Reset">
+
+                </fieldset>
+
+
+        </div>
+
+      </form>
+  <p class="columns six" id="output"></p>
     </div>
 
   <blockquote> <p>These examples are for occasions where user input is required via forms.</p>
@@ -101,6 +144,7 @@
     <footer>
   	<br>Kris Bebbington 2017
     </footer>
-
+  <script src="js/dropdown.js"></script>
+  <script src="js/userinput.js"></script>
   </body>
   </html>

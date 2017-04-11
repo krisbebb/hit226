@@ -16,9 +16,53 @@ float: right;
   padding-left: 0;
 }
 
+.nav__sublist {
+  float: right;
+    margin-top: 0;
+    margin-bottom: 31px;
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 0.8em;
+    position: absolute;
+    z-index: 100;
+
+}
+
 .nav__item {
   float: left;
+  display: inline;
 }
+
+a.nav__link {
+  /* Style as buttons */
+  display: block;
+  background-color: #ee964b;
+  text-decoration: none;
+  color: #000000;
+  padding: 10px;
+  transition: background-color 100ms;
+  min-width: 80px;
+
+}
+
+
+a.nav__link:hover {
+  background-color: #FF5722;
+}
+
+/* nav {background:#FFF;float:left;}
+nav ul {text-align:center;}
+nav ul li {float:left;display:inline;}/*
+
+nav ul li:hover {background:#E6E6E6;}
+nav ul li a {display:block;padding:15px 25px;color:#444;}
+nav ul li ul {position:absolute;width:110px;background:#FFF;}
+nav ul li ul li {margin:0;padding:0;width:110px;}
+nav ul li ul li a {display:block;padding:15px 10px;color:#444;}*/
+nav ul li ul li:hover a {background:#F7F7F7;}
+nav ul li ul.nav__sublist {display:none;}
+nav ul li:hover ul.nav__sublist {display:block;}
+
 
 @media only screen and (max-device-width: 480px) {
 		nav {
