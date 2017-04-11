@@ -5,17 +5,3 @@ a:link, a:visited {
 a:hover, a:active {
     background-color: #7cc6fe;
 }
-
-a.nav__link {
-  /* Style as buttons */
-  display: block;
-  background-color: #ee964b;
-  text-decoration: none;
-  color: #000000;
-  padding: 10px 24px;
-  transition: background-color 100ms;
-}
-
-a.nav__link:hover {
-  background-color: #FF5722;
-}

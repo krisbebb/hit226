@@ -8,6 +8,7 @@
   <meta name="description" content="Living Style Guide Colour Palettes">
   <meta name="author" content="Kris Bebbington">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
 
 
@@ -16,17 +17,26 @@
 <body>
 <section id="main">
 
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="colours.html" class="nav__link">Colours</a></li>
-            <li class="nav__item"><a href="typography.html" class="nav__link">Typography</a></li>
-            <li class="nav__item"><a href="forms.html" class="nav__link">Forms</a></li>
-            <li class="nav__item"><a href="tables.html" class="nav__link">Tables</a></li>
-        </ul>
-    </nav>
+  <nav class="nav">
+      <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
 
+          <li class="nav__item"><a href="about.html" class="nav__link">About</a>
+            <ul id="cssmenu" class="nav__sublist">
+              <li><a href="about.html#what" class="nav__link">Definition</a></li>
+              <li><a href="about.html#why" class="nav__link">Uses</a></li>
+              <li><a href="about.html#tips" class="nav__link">Tips</a><li>
+              <li><a href="about.html#sites" class="nav__link">Websites</a><li>
+              <li><a href="about.html#references" class="nav__link">References</a></li>
+            </ul>
+          </li>
+
+          <li class="nav__item"><a href="colours.html" class="nav__link">Colours</a></li>
+          <li class="nav__item"><a href="typography.html" class="nav__link">Typography</a></li>
+          <li class="nav__item"><a href="forms.html" class="nav__link">Forms</a></li>
+          <li class="nav__item"><a href="tables.html" class="nav__link">Tables</a></li>
+      </ul>
+  </nav>
 
   <div class="copy">
     <header>  <h1> Colour Palettes</h1>
@@ -37,18 +47,26 @@
 
 <article>
   <p> Here are some colour palettes for use in styling web sites. Using Chrome&apos;s ColourZilla, hex values can be copied to the clipboard for CSS. </p>
+  <p> <em>Make sure to enable JavaScript in your Browser to use the demo. </em></p>
+  <p> Click any button to change the background colour </p>
+  <aside>  </aside>
 </article>
 
 <div class="palette_1">
 <p class="box colour_1">#0d3b66
+  <input type="button" class="btn" value="#0d3b66" />
 </p>
 <p class="box colour_2">#faf0ca
+  <input type="button" class="btn" value="#faf0ca" />
 </p>
 <p class="box colour_3">#f4d35e
+    <input type="button" class="btn" value="#f4d35e" />
 </p>
 <p class="box colour_4">#ee964b
+    <input type="button" class="btn" value="#ee964b" />
 </p>
 <p class="box colour_5">#f95738
+    <input type="button" class="btn" value="#f95738" />
 </p>
 
 </div>
@@ -58,14 +76,19 @@
 
 <div class="palette_2">
   <p class="box colour_1">#0d3b66
+      <input type="button" class="btn" value="#0d3b66" />
   </p>
   <p class="box colour_2">#faf0ca
+      <input type="button" class="btn" value="#faf0ca" />
   </p>
   <p class="box colour_3">#0d0630
+      <input type="button" class="btn" value="#0d0630" />
   </p>
   <p class="box colour_4">#000000
+    <input type="button" class="btn" value="#000000" />
   </p>
   <p class="box colour_5">#5d4e60
+      <input type="button" class="btn" value="#5d4e60" />
   </p>
 </div>
 <p>
@@ -76,14 +99,19 @@
 
 <div class="palette_3">
   <p class="box colour_1">#5dfdcb
+      <input type="button" class="btn" value="#5dfdcb" />
   </p>
   <p class="box colour_2">#7cc6fe
+      <input type="button" class="btn" value="#7cc6fe" />
   </p>
   <p class="box colour_3">#f4faff
+      <input type="button" class="btn" value="#f4faff" />
   </p>
   <p class="box colour_4">#8789c0
+      <input type="button" class="btn" value="#8789c0" />
   </p>
   <p class="box colour_5">#08090a
+      <input type="button" class="btn" value="#08090a" />
   </p>
 
 </div>
@@ -104,6 +132,6 @@
     <footer>
   	<br>Kris Bebbington 2017
     </footer>
-
+    <script src="js/colorchange.js"></script>
   </body>
   </html>
