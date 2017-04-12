@@ -49,8 +49,7 @@ function storeTextHandler(event){
 				returnText += "Order " + (i + 1) + ": <br>" + localStorage.getItem(i) + "<hr>";
 			}
 		}
-		console.log(localStorage);
-		// output.textContent = returnText;
+	
 		output.innerHTML = returnText;
 	}
 function resetDBHandler(event){
