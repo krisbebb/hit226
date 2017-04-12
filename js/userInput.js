@@ -1,12 +1,4 @@
-/**
-* Scripts for {Project name and url}
-*
-* author: {name}
-* email: {email}
-* website: {portfolio}
-*/
-
-
+(function (){
 	var output = document.getElementById('output');
 
 	var enterBtn = document.getElementById('write');
@@ -71,3 +63,4 @@ function resetDBHandler(event){
   enterBtn.addEventListener('click', storeTextHandler);
   readBtn.addEventListener('click', readDBHandler);
   resetBtn.addEventListener('click', resetDBHandler);
+})();
