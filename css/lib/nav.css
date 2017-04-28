@@ -48,8 +48,8 @@ a.nav__link:hover {
   display: inline;
 }
 
-.nav__item ul.nav__sublist {display:none;}
-.nav__item:hover ul.nav__sublist {display:block;}
+/*.nav__item ul.nav__sublist {display:none;}
+.nav__item:hover ul.nav__sublist {display:block;}*/
 
 @media only screen and (max-device-width: 480px) {
 		nav {
